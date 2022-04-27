@@ -1,0 +1,74 @@
+{
+  "name": "poh-contracts",
+  "version": "0.0.1",
+  "description": "Solidity contracts for verifying proof-of-humanity on-chain",
+  "main": "index.js",
+  "scripts": {
+    "test": "hardhat test",
+    "verdaccio": "docker run -it --rm --name verdaccio -p 4873:4873 verdaccio/verdaccio",
+    "dev:publish": "npm publish --registry http://localhost:4873/"
+  },
+  "keywords": [
+    "solidity",
+    "ethereum",
+    "smart",
+    "contracts",
+    "humanity",
+    "proof"
+  ],
+  "author": "Alex Bakoushin <alex@bakoush.in>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bakoushin/poh-contracts.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bakoushin/poh-contracts/issues"
+  },
+  "homepage": "https://github.com/bakoushin/poh-contracts#readme",
+  "files": [
+    "contracts/*.sol",
+    "/artifacts/contracts/*.json",
+    "!**/*Mock.sol"
+  ],
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm test"
+    }
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "4.5.0"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "2.0.5",
+    "@nomiclabs/hardhat-etherscan": "3.0.3",
+    "@nomiclabs/hardhat-waffle": "2.0.3",
+    "@typechain/ethers-v5": "7.2.0",
+    "@typechain/hardhat": "2.3.1",
+    "@types/chai": "4.3.0",
+    "@types/mocha": "9.1.0",
+    "@types/node": "12.20.47",
+    "@typescript-eslint/eslint-plugin": "4.33.0",
+    "@typescript-eslint/parser": "4.33.0",
+    "chai": "4.3.6",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.5.0",
+    "eslint-config-standard": "16.0.3",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "3.4.1",
+    "eslint-plugin-promise": "5.2.0",
+    "ethereum-waffle": "3.4.4",
+    "ethers": "5.6.1",
+    "ghooks": "2.0.4",
+    "hardhat": "2.9.1",
+    "hardhat-gas-reporter": "1.0.8",
+    "prettier": "2.6.0",
+    "prettier-plugin-solidity": "^1.0.0-beta.13",
+    "solhint": "3.3.7",
+    "solidity-coverage": "0.7.20",
+    "ts-node": "10.7.0",
+    "typechain": "5.2.0",
+    "typescript": "4.6.2"
+  }
+}
