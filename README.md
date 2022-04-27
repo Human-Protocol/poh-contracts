@@ -8,7 +8,7 @@ Proof-of-Humanity is signed proof that the transaction sender is a human rather 
 
 See also:
 
-[Proof-of-Humanity hCaptcha Validator API](https://github.com/bakoushin/poh-validator-hcaptcha)
+[Proof-of-Humanity hCaptcha Validator API](https://github.com/bakoushin/poh-validator-hcaptcha-api)
 
 ## HumanOnly
 
@@ -16,7 +16,7 @@ This is a basic abstract contract you should inherit from. It exposes the follow
 
 ### Methods
 
-`setHumanityValidator(<address>)` – sets the address of the humanity validator you trust. Usually, this is the address of the account used to sign proof-of-humanity in the backend server you are in control or trust. Here is an [example server](https://github.com/bakoushin/poh-validator-hcaptcha) for hCaptcha.
+`setHumanityValidator(<address>)` – sets the address of the humanity validator you trust. Usually, this is the address of the account used to sign proof-of-humanity in the backend server you are in control or trust. Here is an [example server](https://github.com/bakoushin/poh-validator-hcaptcha-api) for hCaptcha.
 
 > Validator could be set either in contract `constructor`, or later, by the contract owner.
 
