@@ -26,9 +26,11 @@ This is a basic abstract contract you should inherit from. It exposes the follow
 
 `sovereignPoH(<proof>)` – ensures that the `sovereign` proof is valid and never seen before.
 
+If the proof is invalid, transaction is rejected.
+
 > `proof` must be provided as a parameter for a method using one of these modifiers.
 
-## Proof types
+## Proof-of-Humanity types
 
 Two types of proof-of-humanity are supported: `basic` and `sovereign`.
 
