@@ -28,7 +28,7 @@ This is a basic abstract contract you should inherit from. It exposes the follow
 
 If the proof is invalid, transaction is rejected.
 
-> `proof` must be provided as a parameter for a method using one of these modifiers.
+> `proof` must be provided as a parameter for a modified method ([example](https://github.com/bakoushin/poh-contracts)).
 
 ## Proof-of-Humanity types
 
