@@ -8,6 +8,8 @@ Proof-of-Humanity is signed proof that the transaction sender is a human rather 
 
 See also:
 
+[Proof-of-HUMANity on-chain: protect your smart contracts from bots](https://www.humanprotocol.org/blog/proof-of-humanity-on-chain-protect-your-smart-contracts-from-bots)
+
 [Proof-of-Humanity hCaptcha Validator API](https://github.com/bakoushin/poh-validator-hcaptcha-api)
 
 ## HumanOnly
