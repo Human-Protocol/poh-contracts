@@ -92,6 +92,14 @@ function doSomethingImpotant(bytes calldata proof) public basicPoH(proof)
 
 > Ensure to provide a valid `proof` when calling this function from your dApp.
 
+## See also
+
+- [Proof-of-HUMANity on-chain: protect your smart contracts from bots](https://www.humanprotocol.org/blog/proof-of-humanity-on-chain-protect-your-smart-contracts-from-bots)
+- [Proof-of-Humanity-React](https://npmjs.com/package/poh-react)
+- [Proof-of-Humanity hCaptcha Validator React](https://npmjs.com/package/poh-validator-hcaptcha-react)
+- [Proof-of-Humanity hCaptcha Validator API](https://hub.docker.com/r/bakoushin/poh-validator-hcaptcha)
+- [Counter dApp Example](https://github.com/bakoushin/poh-counter-example)
+
 ## Author
 
 Alex Bakoushin
