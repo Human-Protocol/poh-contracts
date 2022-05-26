@@ -1,6 +1,6 @@
 {
   "name": "poh-contracts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Solidity contracts for verifying proof-of-humanity on-chain",
   "main": "index.js",
   "scripts": {
