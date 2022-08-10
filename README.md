@@ -10,7 +10,7 @@ See also:
 
 [Proof-of-HUMANity on-chain: protect your smart contracts from bots](https://www.humanprotocol.org/blog/proof-of-humanity-on-chain-protect-your-smart-contracts-from-bots)
 
-[Proof-of-Humanity hCaptcha Validator API](https://github.com/bakoushin/poh-validator-hcaptcha-api)
+[Proof-of-Humanity hCaptcha Validator API](https://github.com/Human-Protocol/poh-validator-hcaptcha-api)
 
 ## HumanOnly
 
@@ -18,7 +18,7 @@ This is a basic abstract contract you should inherit from. It exposes the follow
 
 ### Methods
 
-`setHumanityValidator(<address>)` – sets the address of the humanity validator you trust. Usually, this is the address of the account used to sign proof-of-humanity in the backend server you are in control or trust. Here is an [example server](https://github.com/bakoushin/poh-validator-hcaptcha-api) for hCaptcha.
+`setHumanityValidator(<address>)` – sets the address of the humanity validator you trust. Usually, this is the address of the account used to sign proof-of-humanity in the backend server you are in control or trust. Here is an [example server](https://github.com/Human-Protocol/poh-validator-hcaptcha-api) for hCaptcha.
 
 > Validator could be set either in contract `constructor`, or later, by the contract owner.
 
@@ -30,7 +30,7 @@ This is a basic abstract contract you should inherit from. It exposes the follow
 
 If the proof is invalid, transaction is rejected.
 
-> `proof` must be provided as a parameter for a modified method ([example](https://github.com/bakoushin/poh-contracts#4-protect-your-methods-by-adding-the-proof-parameter-and-one-of-the-poh-modifiers)).
+> `proof` must be provided as a parameter for a modified method ([example](https://github.com/Human-Protocol/poh-contracts#4-protect-your-methods-by-adding-the-proof-parameter-and-one-of-the-poh-modifiers)).
 
 ## Proof-of-Humanity types
 
@@ -65,7 +65,7 @@ npm install poh-contracts
 ### 1. Import `HumanOnly.sol` contract
 
 ```
-`import "poh-contracts/contracts/HumanOnly.sol";`
+`import "poh-contracts/Human-Protocol/HumanOnly.sol";`
 ```
 
 ### 2. Inherit your contract from `HumanOnly`
@@ -98,7 +98,7 @@ function doSomethingImpotant(bytes calldata proof) public basicPoH(proof)
 - [Proof-of-Humanity-React](https://npmjs.com/package/poh-react)
 - [Proof-of-Humanity hCaptcha Validator React](https://npmjs.com/package/poh-validator-hcaptcha-react)
 - [Proof-of-Humanity hCaptcha Validator API](https://hub.docker.com/r/bakoushin/poh-validator-hcaptcha)
-- [Counter dApp Example](https://github.com/bakoushin/poh-counter-example)
+- [Counter dApp Example](https://github.com/Human-Protocol/poh-counter-example)
 
 ## Author
 
